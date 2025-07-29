@@ -56,6 +56,8 @@
     .letter:nth-child(13)  { animation-delay: 1.3s, 2.2s, 2.2s; }
     .letter:nth-child(14)  { animation-delay: 1.4s, 2.3s, 2.3s; }
     .letter:nth-child(15)  { animation-delay: 1.5s, 2.4s, 2.4s; }
+    .letter:nth-child(16)  { animation-delay: 1.6s, 2.5s, 2.5s; }
+    .letter:nth-child(17)  { animation-delay: 1.7s, 2.6s, 2.6s; }
 
     @keyframes appear {
       to {
@@ -122,24 +124,26 @@
 </head>
 <body>
   <div class="title">
+    <span class="letter">C</span>
+    <span class="letter">R</span>
+    <span class="letter">U</span>
     <span class="letter">D</span>
-    <span class="letter">o</span>
-    <span class="letter">m</span>
     <span class="letter"> </span>
-    <span class="letter">T</span>
-    <span class="letter">e</span>
-    <span class="letter">c</span>
-    <span class="letter">n</span>
-    <span class="letter">o</span>
-    <span class="letter">l</span>
-    <span class="letter">o</span>
-    <span class="letter">g</span>
-    <span class="letter">i</span>
+    <span class="letter">E</span>
+    <span class="letter">v</span>
     <span class="letter">a</span>
+    <span class="letter">r</span>
+    <span class="letter">i</span>
     <span class="letter">s</span>
+    <span class="letter">t</span>
+    <span class="letter">o</span>
+    <span class="letter">2</span>
+    <span class="letter">0</span>
+    <span class="letter">0</span>
+    <span class="letter">6</span>
 
   </div>
 
-  <button class="login-btn"><a href="{{ route('pessoas.index') }}">Entrar</a></button>
+  <a href="{{ route('pessoas.index') }}"><button class="login-btn">Entrar</button></a>
 </body>
 </html>

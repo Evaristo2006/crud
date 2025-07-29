@@ -12,24 +12,64 @@
 </head>
 <body>
 <style>
-    *{
-        background: whitesmoke
-    }
-    th{
-        padding: 10px;
-        margin: 10px;
-    }
-    td{
-        padding: 10px;
-        margin-left: 10px;
-    }
+   h2{
+    text-align: center;
+    margin-top: 20px;
+   }
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(3, 153, 247);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: rgb(3, 153, 247);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+a button.btn{
+    background: rgb(0, 77, 144);
+}
+
+button:hover {
+  background-color: #415a77;
+}
+
+
+
+
 </style>
 
 
   <section class="section-action">
     <div class="container">
     <h2>Lista de Pessoas</h2>
-    <a href="{{ route('pessoas.create')}}" class="btn btn-succes mb-3"> Cadastrar Nova</a>
+    <a href="{{ route('pessoas.create')}}" class="btn btn-succes mb-3"><button class="btn"> Cadastrar Nova👥</button></a>
     @if ($message = Session::get('Success'))
         <div class="alert alert-success">{{ $message }}</div>
     @endif
